@@ -2,6 +2,7 @@ package com.github.gongfuboy;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -27,6 +28,8 @@ public class DoorsConvertImpl implements IConverter {
     }
 
     public void setUri(String uri) {
+        String s = String.valueOf("");
+        String tempString = BeanUtils.instantiateClass(String.class);
         this.uri = uri;
     }
 

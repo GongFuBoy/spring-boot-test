@@ -18,7 +18,7 @@ import java.util.List;
  * Created by ZhouLiMing on 2018/6/29.
  */
 @Controller
-@RequestMapping("/")
+@RequestMapping("/index")
 public class BookController {
 
     @Autowired
